@@ -1,6 +1,7 @@
 <?php
 include('funciones.php');
 $productos = traer_productos();
+
 ?>
 
 <!DOCTYPE html>

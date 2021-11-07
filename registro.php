@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>shop - login</title>
+        <title>shop - registro</title>
         <link rel="icon" type="image/x-icon" href="img/favicon.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -37,13 +37,20 @@
             <div class="container d-flex h-100 align-items-center">
               <div class="col-4">
                 <div class="text-left">
-                    <h1 class="my-0 txt-black mb-4">login</h1>
-                    <form method="post" action="logearse.php">
-                      <input type="text" name="dni" class="form-control mb-4" placeholder="DNI" id="name">
-                      <input type="text" name="contrasena" class="form-control mb-4" placeholder="contrasena" id="phone">
-                      <button type="submit" class="btn btn-login btn-block">Ingresar</button>
-                      <h5 class="mt-3">No tenés cuenta <a href="registro.php">Registrate</a></h5>
-                    </form>
+                    <h1 class="my-0 txt-black mb-4">Registro</h1>
+                        <form method="post" id="formulario" action="registrarse.php">
+                            <input type="text" name="dni" class="form-control mb-4" placeholder="DNI">
+                            <input type="text" name="nombre" class="form-control mb-4" placeholder="Nombre">
+                            <input type="text" name="apellido" class="form-control mb-4" placeholder="Apellido">
+                            <input type="email" name="email" class="form-control mb-4" placeholder="E-mail">                            
+                            <input type="text" name="telefono" class="form-control mb-4" placeholder="Teléfono">
+                            <input type="text" name="calle" class="form-control mb-4" placeholder="Calle">
+                            <input type="text" name="ciudad" class="form-control mb-4" placeholder="Ciudad">
+                            <input type="text" name="cod_postal" class="form-control mb-4" placeholder="Código postal">                            
+                            <input type="text" name="contrasena" class="form-control mb-4" placeholder="Contraseña">
+                            <input type="text" name="contrasena2" class="form-control mb-4" placeholder="Confirme Contraseña">
+                            <button type="submit" class="btn btn-login btn-block">Registrar</button>
+                        </form>
                 </div>
               </div>
 
