@@ -55,10 +55,10 @@
                           <td class="align-middle"><img src="img/ensalada.png" /></td>
                           <td class="align-middle text-left">Ensalada</td>
                           <td class="align-middle text-center">
-                            <input type="number" class="form-control" placeholder="01" id="cantidad">
+                            <input type="number" class="form-control" placeholder="1" id="cantidad">
                           </td>
-                          <td class="align-middle text-center">$300</td>
-                          <td class="align-middle text-center">$300</td>
+                          <td class="align-middle text-center">$<span id="precio">300</span></td>
+                          <td class="align-middle text-center">$<span id="subtotal">100</span></td>
                         </tr>
                         <tr>
                           <td class="align-middle"><img src="img/pizza.png" /></td>

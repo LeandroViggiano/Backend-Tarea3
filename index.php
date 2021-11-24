@@ -41,7 +41,7 @@ $productos = traer_productos();
                       <img src="img/papas-fritas.png" />
                       <h4 class="text-left">Papas Fritas</h4>
                       <h5 class="text-left">$100</h5>
-                      <button class="btn btn-agregar">Agregar</button>
+                      <button data-percio="<?php echo $producto['nombre'];?>" data-nombre="<?php echo $producto['precio'];?>" class="btn btn-agregar">Agregar</button>
                     </div>
                   </div>
                   <div class="col-xl-3 col-6 mt-4">
@@ -49,7 +49,7 @@ $productos = traer_productos();
                       <img src="img/ensalada.png" />
                       <h4 class="text-left">Ensalada</h4>
                       <h5 class="text-left">$300</h5>
-                      <button class="btn btn-agregar">Agregar</button>
+                      <button data-percio="<?php echo $producto['nombre'];?>" data-nombre="<?php echo $producto['precio'];?>" class="btn btn-agregar">Agregar</button>
                     </div>
                   </div>
                   <div class="col-xl-3 col-6 mt-4">
@@ -57,7 +57,7 @@ $productos = traer_productos();
                       <img src="img/pizza.png" />
                       <h4 class="text-left">Pizza</h4>
                       <h5 class="text-left">$500</h5>
-                      <button class="btn btn-agregar">Agregar</button>
+                      <button  class="btn btn-agregar">Agregar</button>
                     </div>
                   </div>
                   <div class="col-xl-3 col-6 mt-4">

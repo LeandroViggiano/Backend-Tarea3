@@ -53,4 +53,16 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+
+
+
 })(jQuery); // End of use strict
+
+$('#cantidad').change(function(){
+    var cantidad = $(this).val();
+    var precio = $('#precio').text();
+    var subtotal = cantidad *precio;
+    consol.log(subtotal);
+    $("#subtotal").text(subtotal);
+})
