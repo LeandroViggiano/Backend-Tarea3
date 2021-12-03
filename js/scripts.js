@@ -58,7 +58,6 @@
 
 
 })(jQuery); // End of use strict
-$('.btn-agregar').click(function(){
     var precio = $(this).attr("data-precio");
     var imagen = $(this).attr("data-imagen");
     var nombre = $(this).attr("data-nombre");
@@ -76,8 +75,6 @@ $('.btn-agregar').click(function(){
 })
 
 
-$('#cantidad').change(function(){
-    var cantidad = $(this).val();
     var precio = $('#precio').text();
     var subtotal = cantidad * precio;
     consol.log(subtotal);
