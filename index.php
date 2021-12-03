@@ -36,76 +36,24 @@ $productos = traer_productos();
                   </div>
                 </div>
                 <div class="row align-items-end">
+                  <?php foreach($productos as $producto){ ?>
                   <div class="col-xl-3 col-6 mt-4">
                     <div class="producto text-center p-4">
-                      <img src="img/papas-fritas.png" />
-                      <h4 class="text-left">Papas Fritas</h4>
-                      <h5 class="text-left">$100</h5>
-                      <button class="btn btn-agregar">Agregar</button>
+                        <?php echo('<img src="' . $producto['imagen'] . '">'); ?>
+                        <h4 class="text-left"><?php echo $producto['nombre'];?></h4>
+                        <h5 class="text-left">$<?php echo $producto['precio'];?></h5>
+                      <button data-id="<?php echo $producto['id'];?>"data-precio="<?php echo $producto['precio'];?>"
+                       data-nombre="<?php echo $producto['nombre'];?>" data-imagen="<?php echo $producto['imagen'];?>" class="btn btn-agregar">Agregar</button>
                     </div>
                   </div>
-                  <div class="col-xl-3 col-6 mt-4">
-                    <div class="producto text-center p-4">
-                      <img src="img/ensalada.png" />
-                      <h4 class="text-left">Ensalada</h4>
-                      <h5 class="text-left">$300</h5>
-                      <button class="btn btn-agregar">Agregar</button>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-6 mt-4">
-                    <div class="producto text-center p-4">
-                      <img src="img/pizza.png" />
-                      <h4 class="text-left">Pizza</h4>
-                      <h5 class="text-left">$500</h5>
-                      <button class="btn btn-agregar">Agregar</button>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-6 mt-4">
-                    <div class="producto text-center p-4">
-                      <img src="img/sandwich.png" />
-                      <h4 class="text-left">Sandwich</h4>
-                      <h5 class="text-left">$300</h5>
-                      <button class="btn btn-agregar">Agregar</button>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-6 mt-4">
-                    <div class="producto text-center p-4">
-                      <img src="img/hamburguesa.png" />
-                      <h4 class="text-left">Hamburguesa</h4>
-                      <h5 class="text-left">$350</h5>
-                      <button class="btn btn-agregar">Agregar</button>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-6 mt-4">
-                    <div class="producto text-center p-4">
-                      <img src="img/galletitas.png" />
-                      <h4 class="text-left">Galletitas</h4>
-                      <h5 class="text-left">$200</h5>
-                      <button class="btn btn-agregar">Agregar</button>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-6 mt-4">
-                    <div class="producto text-center p-4">
-                      <img src="img/pancho.png" />
-                      <h4 class="text-left">Pancho</h4>
-                      <h5 class="text-left">$200</h5>
-                      <button class="btn btn-agregar">Agregar</button>
-                    </div>
-                  </div>
-                  <div class="col-xl-3 col-6 mt-4">
-                    <div class="producto text-center p-4">
-                      <img src="img/dona.png" />
-                      <h4 class="text-left">Dona</h4>
-                      <h5 class="text-left">$100</h5>
-                      <button class="btn btn-agregar">Agregar</button>
-                    </div>
-                  </div>
+                  <?php } ?>
                 </div>
             </div>
         </section>
         <!-- Contacto-->
         <?php include('contacto.php')  ?>
 
+         
 
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

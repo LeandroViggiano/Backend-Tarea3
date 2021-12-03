@@ -53,4 +53,33 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+
+
+
 })(jQuery); // End of use strict
+$('.btn-agregar').click(function(){
+    var precio = $(this).attr("data-precio");
+    var imagen = $(this).attr("data-imagen");
+    var nombre = $(this).attr("data-nombre");
+    var id = $(this).attr("data.id");
+    $.post("agregar_carrito.php",{
+        id: id, 
+        id_usuario: id_usuario,
+        precio: precio,
+        nombre: nombre,
+        imagen: imagen
+    }, 
+        function(result){
+        alert("producto insertado!");
+    });
+})
+
+
+$('#cantidad').change(function(){
+    var cantidad = $(this).val();
+    var precio = $('#precio').text();
+    var subtotal = cantidad * precio;
+    consol.log(subtotal);
+    $("#subtotal").text(subtotal);
+})
